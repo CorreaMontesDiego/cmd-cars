@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(fuentes/Tinos-Regular.ttf);
+}
+
+.menu {
+    position: sticky;
+    /*Posicion*/
+    top: 0;
+    /*especifica parte de la posición de un elemento posicionado*/
+    background-color: #24221f;
+    /*Color de fondo*/
+    padding: 10px 0px 10px 0px;
+    /*Espacio en blanco*/
+    margin: 0 auto;
+    /*Margen*/
+    overflow: hidden;
+    /*especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+.menu a {
+    font-family: fuente1;
+    /*Fuente*/
+    float: left;
+    /*Coloca un elemento en el lado izquierdo o derecho de su contenedor*/
+    color: #E4D3B2;
+    /*Color*/
+    text-align: center;
+    /*Alineacion del texto*/
+    padding: 2px 16px;
+    /*Espacio en blanco*/
+    text-decoration: none;
+    /*Decoracion del link*/
+    font-size: 20px;
+    /*Tamaño de la fuente*/
+}
+
+.menu-log {
+    right: auto;
+    /*especifica parte de la posición de un elemento*/
+    float: right;
+    /*Coloca un elemento en el lado izquierdo o derecho de su contenedor*/
+}
+.relleno{
+    opacity: 0;
+    width: 22%;
+    visibility: hidden;
+}
+footer {
+    width: 100%;
+    /*Ancho*/
+    bottom: 0px;
+    /*Desplaza el elemento abajo*/
+    background-color: #24221f;
+    /*Color de fondo*/
+    color: #e4d3b2;
+    /*Color*/
+    height: 4%;
+    font-size: 20px;
+    /*Tamaño de fuente*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.box{
+    width: 500px;
+    height: 584px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#E4D3B2;
+    transform: scale(0);
+    transition: .3s ease;
+}
+.box:hover .capa{
+    transform: scale(1);
+}
+.container h2{
+    font-family: fuente1;
+    font-size: 300%;
+}
+.secciones h1{
+    padding-bottom: 50px;
+font-family: fuente1;
+color: #ffffff;
+font-size: 300%;
+}
+.secciones p{
+    font-family: fuente1;
+    color: #ffffff;
+    font-size: 120%;
+    }
+.secciones{
+    overflow: hidden;
+}
+.secciones-texto{
+    padding: 80px;
+    width: 50%;   
+     float: left;
+}
+.secciones-imagen {
+float: left;
+height: 800px;
+width: 50%;
+display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.secciones-imagen img{
+padding: 80px;
+height: 100%;
+width: 100%;
+}
+ h1{
+    font-size: 350% !important;
+    padding-top: 50px;
+    font-family: fuente1;
+    font-size:600%;
+    user-select: none;
+    color: #E4D3B2!important;
+}
+p{
+    color: #ffffff !important;
+}
+
+@media (max-width: 800px) {
+    img{
+      height: 50%;
+      width: 50%;
+    }
+}
+.foto img {
+    border-radius: 5%; /* Establece un borde redondeado del 5% para la imagen dentro del elemento con la clase 'foto' */
+    height: 50%; /* Establece la altura de la imagen dentro del elemento con la clase 'foto' a 400px */
+    width: 50%; /* Establece el ancho de la imagen dentro del elemento con la clase 'foto' a 250px */
+  }

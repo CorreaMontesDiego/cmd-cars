@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: fuente1;
+    src: url(fuentes/Tinos-Regular.ttf);
+}
+@font-face {
+    font-family: fuente2;
+    src: url(fuentes/Tinos-Bold.ttf);
+}
+@font-face {
+    font-family: fuente3;
+    src: url(fuentes/Tinos-Italic.ttf);
+}
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #24221f;
+    padding: 10px 0px 10px 0px;
+    margin: 0 auto;
+    overflow: hidden;display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+.menu a {
+    font: family fuente1;
+    float: left;
+    color: #E4D3B2;
+    text-align: center;
+    padding: 2px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-log {
+    right: auto;
+    float: right;}
+.relleno{
+    opacity: 0;
+    width: 22%;
+    visibility: hidden;
+}
+footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: #24221f;
+    color: #e4d3b2;
+    height: 4%;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    
+    position: static;
+    position:absolute;
+}
+.section{
+    padding: 40px 100px 50px 100px;
+    overflow: hidden;
+}
+.foto{
+    padding-top: 6%;
+   float: left;
+   width: 30%;
+}
+.info{
+    padding-top: 5%;
+    float:left;
+    width: 70%;
+}
+.info h1,h4{
+    padding-left: 50px;
+    font-family: fuente2;
+    font-size:300%;
+    color: #5e3e0f;
+    user-select: none;
+}
+.info p{
+    padding: 40px 110px 0px 50px;
+    font-family: fuente1;
+    font-size: 130%;
+}
+#p{
+    color:rgb(214, 126, 12);
+    padding: 15px;
+    float: left;
+}
+.info img{
+    padding-left: 100px;
+    float: left;
+}
+.section a{
+    text-decoration: none;
+    color: rgb(214, 126, 12);
+}
+a:hover {
+    color: #b8b8b8;
+    text-shadow: 0 0 1px #333;
+}
+@media (max-width: 800px) {
+    img{
+      height: 50%;
+      width: 50%;
+    }
+}
